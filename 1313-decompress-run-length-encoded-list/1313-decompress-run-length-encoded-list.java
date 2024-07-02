@@ -9,6 +9,8 @@ class Solution {
         int k=0;
         for(int i=0;i<nums.length;i+=2)
         {
+                //Arrays.fill(arrayName, startIndex, endIndex, value);
+          
             Arrays.fill(a, k, k+nums[i], nums[i+1]);
             k+=nums[i];
         }
