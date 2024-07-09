@@ -14,9 +14,9 @@ class Solution {
        int len=arr.length;
        int mid=len/2;
        if(len%2!=0){
-           return arr[mid];
+           return (double)arr[mid];
        }else {
-           return (arr[mid]+arr[mid-1])/2;
+           return (double)(arr[mid]+arr[mid-1])/2;
        }
     }
 }
