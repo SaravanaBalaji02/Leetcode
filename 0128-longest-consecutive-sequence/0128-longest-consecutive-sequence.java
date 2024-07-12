@@ -17,7 +17,7 @@ class Solution {
             }
              else if(nums[i]!=nums[i-1])
             {
-                count=0;
+                count=1;
             }
             if(count>max)
             {
