@@ -15,6 +15,10 @@ class Solution {
                 count++;
 
             }
+            else if(nums[i]==nums[i-1])
+            {
+                continue;
+            }
              else if(nums[i]!=nums[i-1])
             {
                 count=1;
