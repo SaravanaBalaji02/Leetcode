@@ -12,6 +12,6 @@ class Solution {
                 set.add(s.charAt(i));
             }
         }
-        return '\0';
+        return '0';
     }
 }
