@@ -1,17 +1,16 @@
+
+
 class Solution {
     public String greatestLetter(String s) {
-       HashSet<Character> set=new HashSet<>();
-       for(char ch:s.toCharArray())
-       {
-           set.add(ch);
-       }
-       
 
-       for(char ch = 'Z'; ch >= 'A'; ch--)
-            if(set.contains(ch) && set.contains((char)('a'+(ch-'A'))))
-               return ""+ch;
+        for (int i = 'z'; i >= 'a'; i--) {
+            String lower = Character.toString(i);
+            String upper = Character.toString(i - 32);
+            if (s.contains(lower) && s.contains(upper)) {
+                return upper;
+            }
+        }
+
         return "";
-
-       
     }
 }
